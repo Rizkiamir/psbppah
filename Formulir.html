@@ -1,0 +1,227 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Santri</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #0b3d0b, #d4af37);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+h2 {
+  background-color: #1a4d1a;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  text-align: left;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+}
+
+input[type="text"], input[type="date"], input[type="number"], input[type="file"], select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.radio-group {
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn.success {
+  background-color: #2e7d32;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <h1>Formulir Pendaftaran Santri<br>Pondok Pesantren TPI Al Hidayah, Al Ishlah, Al Amanah, Al Banin</h1><h2>Daftar di Pesantren</h2>
+  <label>Pilih Pesantren</label>
+  <select name="pesantren" required>
+    <option value="" disabled selected>Pilih Pesantren</option>
+    <option value="Al Hidayah">Al Hidayah</option>
+    <option value="Al Ishlah">Al Ishlah</option>
+    <option value="Al Amanah">Al Amanah</option>
+    <option value="Al Banin">Al Banin</option>
+  </select>
+
+  <label>Tahun Masuk</label>
+  <input type="text" name="tahun_masuk" placeholder="Contoh: 2025">
+
+  <h2>Pendidikan Yang Ditempuh</h2>
+  <select name="pendidikan" required>
+    <option value="" disabled selected>Pilih Pendidikan</option>
+    <option>SD</option>
+    <option>SMP</option>
+    <option>MA</option>
+    <option>Tahfidz</option>
+  </select>
+
+  <label>Ijazah Terakhir</label>
+  <select name="ijazah" required>
+    <option value="" disabled selected>Pilih Ijazah Terakhir</option>
+    <option>SD</option>
+    <option>SMP</option>
+    <option>SMA</option>
+  </select>
+
+  <h2>Informasi Santri</h2>
+  <label>NIK</label>
+  <input type="text" name="nik">
+
+  <label>Nomor KK</label>
+  <input type="text" name="kk">
+
+  <label>Nama Lengkap</label>
+  <input type="text" name="nama">
+
+  <label>Tempat Lahir</label>
+  <input type="text" name="tempat_lahir">
+
+  <label>Tanggal Lahir</label>
+  <input type="date" name="tanggal_lahir">
+
+  <label>Jenis Kelamin</label>
+  <div class="radio-group">
+    <input type="radio" name="gender" value="Laki-laki">Laki-laki
+    <input type="radio" name="gender" value="Perempuan">Perempuan
+  </div>
+
+  <label>Provinsi</label>
+  <input type="text" name="provinsi">
+
+  <label>Kabupaten</label>
+  <input type="text" name="kabupaten">
+
+  <label>Kecamatan</label>
+  <input type="text" name="kecamatan">
+
+  <label>Desa/Kelurahan</label>
+  <input type="text" name="desa">
+
+  <label>Dukuh RT/RW</label>
+  <input type="text" name="dukuh">
+
+  <label>Nomor HP</label>
+  <input type="text" name="hp">
+
+  <h2>Informasi Orang Tua/Wali</h2>
+  <label>NIK Ayah</label>
+  <input type="text" name="nik_ayah">
+
+  <label>Nama Ayah</label>
+  <input type="text" name="nama_ayah">
+
+  <label>Pekerjaan Ayah</label>
+  <input type="text" name="pekerjaan_ayah">
+
+  <label>NIK Ibu</label>
+  <input type="text" name="nik_ibu">
+
+  <label>Nama Ibu</label>
+  <input type="text" name="nama_ibu">
+
+  <label>Pekerjaan Ibu</label>
+  <input type="text" name="pekerjaan_ibu">
+
+  <h2>Upload Gambar</h2>
+  <label>Ijazah Terakhir</label>
+  <input type="file">
+
+  <label>Kartu Keluarga</label>
+  <input type="file">
+
+  <label>Akta Kelahiran</label>
+  <input type="file">
+
+  <label>SK. Baik</label>
+  <input type="file">
+
+  <h2>Informasi Pembayaran</h2>
+  <p>Minimal pembayaran yaitu Rp.600.000 untuk biaya pendaftaran dan pembangunan.</p>
+  <label>Upload Bukti Pembayaran</label>
+  <input type="file">
+
+  <p>Nomor Rekening: <strong>BRI (3597 0104 4046 531)</strong></p>
+
+  <button class="submit-btn" type="submit">Kirim</button>
+</form>
+
+  </div>  <script>
+    const form = document.querySelector("form");
+    const submitBtn = document.querySelector(".submit-btn");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const jsonData = {};
+      formData.forEach((value, key) => jsonData[key] = value);
+
+      fetch("https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbzYwm3MoXC_xPNoQnKah9JqaKpD28eashknCdWuHp60dYK2IHX1mcwDF8t-Gmd7oP4/exec/exec", {
+        method: "POST",
+        body: JSON.stringify(jsonData),
+        headers: {
+          "Content-Type": "application/json",
+        }
+      })
+      .then(res => res.json())
+      .then(res => {
+        submitBtn.textContent = "Data sudah terkirim";
+        submitBtn.classList.add("success");
+        form.reset();
+        setTimeout(() => {
+          submitBtn.textContent = "Kirim";
+          submitBtn.classList.remove("success");
+        }, 3000);
+      })
+      .catch(err => {
+        alert("Gagal mengirim data.");
+        console.error(err);
+      });
+    });
+  </script></body>
+</html>
